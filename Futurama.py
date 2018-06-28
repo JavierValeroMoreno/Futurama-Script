@@ -64,7 +64,7 @@ def Traductor( cadena ):
         it = it+1
     
     imagen = Image.new('RGB',(len(aux[0])*50 + 50, len(aux)*50 +50), 'white')
-    print(imagen.size)
+    print("Tamaño de imagen: "+str(imagen.size))
     despX = 0
     despY = 25
     comillas_O = True
@@ -85,11 +85,13 @@ def Traductor( cadena ):
         despY = despY +  50
     
     imagen.show()
-    imagen.save("Test1.jpg")
+    #imagen.save("Test1.jpg")
+    imagen.save(cadena+".jpg")
     imagen.close()
 
 
 
-print(Traductor('"inutiles desgraciados  asdad "'))
-
+#print(Traductor('"inutiles desgraciados  asdad "'))
+cadena_a_traducir = input("Introduce cadena a traducir: ")
+Traductor(cadena_a_traducir)
     
