@@ -92,6 +92,6 @@ def Traductor( cadena ):
 
 
 #print(Traductor('"inutiles desgraciados  asdad "'))
-cadena_a_traducir = input("Introduce cadena a traducir: ")
-Traductor(cadena_a_traducir)
+#cadena_a_traducir = input("Introduce cadena a traducir: ")
+#Traductor(cadena_a_traducir)
     
